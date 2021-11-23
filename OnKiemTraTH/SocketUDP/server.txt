@@ -1,0 +1,31 @@
+//Ho ten: Pham Thi Hong Linh
+//MSSV: B1809365
+import java.net.*;
+import java.util.Scanner;
+import java.io.*;
+
+public class Server {
+
+	public static void main(String[] args) {
+		try {
+			//Tao UDP Socket
+			DatagramSocket ds = new DatagramSocket(4567);
+			//Tao goi nhan va nhan tin tu Client
+			
+			//Xu ly va Hien thi tin cua Client
+			
+			//Tao goi gui va gui cau tra loi cho Client
+
+			//ds.close();
+		}
+		catch(SocketException e) {
+			System.out.println("Khong khoi tao duoc UDP Socket");
+		}
+		catch(IOException i) {
+			System.out.println("Loi nhap xuat");
+		}
+		
+
+	}
+
+}

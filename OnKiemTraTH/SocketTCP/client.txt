@@ -1,0 +1,40 @@
+import java.net.*;
+import java.io.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		try {
+			//Tao Socket TCP
+			Socket s = new Socket("localhost",1999);
+			System.out.println("Da noi ket den Server");
+
+			//Tao 2 doi tuong in-out			
+			InputStream is = s.getInputStream();
+			OutputStream os = s.getOutputStream();
+			Scanner sc = new Scanner(is);
+			PrintWriter pw = new PrintWriter(os);
+
+			//nhap yeu cau cua Client
+
+			//Gui yeu cau sang Server
+
+			//Kiem tra dieu kien de thoat
+
+			//Nhan ket qua tu Server
+
+			//Hien Thi ket qua ra man hinh
+
+ 			//Dong noi ket
+			s.close();
+		}
+		catch(UnknownHostException e) {
+			System.out.println("Chua ket noi den Server");
+		}
+		catch(IOException e) {
+			System.out.println("Loi nhap tu ban phim");
+		}
+
+	}
+
+}

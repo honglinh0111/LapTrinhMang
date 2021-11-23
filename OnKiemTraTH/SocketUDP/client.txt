@@ -1,0 +1,33 @@
+import java.net.*;
+import java.util.Scanner;
+import java.io.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		try {
+			//Tao UDP Socket
+			DatagramSocket ds = new DatagramSocket();
+			//Nhap noi dung can gui cho Server
+
+			//Dong goi yeu cau va gui
+			
+			//Nhan goi tra loi va nhan
+			
+			//Xu ly va Hien thi cau tra loi tu Server
+
+			//Dong noi ket
+			ds.close();
+		}
+		catch(SocketException e) {
+			System.out.println("Khong khoi tao duoc UDP Socket");
+		}
+		catch(UnknownHostException u) {
+			System.out.println("Sai dia chi");
+		}
+		catch(IOException i) {
+			System.out.println("Loi nhap xuat");
+		}
+	} 
+
+}

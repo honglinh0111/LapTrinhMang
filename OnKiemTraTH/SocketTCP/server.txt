@@ -1,0 +1,39 @@
+import java.net.*;
+import java.io.*;
+import java.util.Scanner;
+
+public class Server {
+
+	public static void main(String[] args) {
+		try {
+			//Tao server noi ket, lang nghhe cong
+			ServerSocket ss=new ServerSocket(1999);
+			System.out.println("Da khoi tao xong Server");
+
+			//Chap nhan cho Client noi ket			
+			Socket s = ss.accept();
+			System.out.println("Da ket noi voi 1 Client");
+
+			//Tao 2 doi tuong in-out
+			InputStream is = s.getInputStream();
+			OutputStream os = s.getOutputStream();
+			Scanner sc = new Scanner(is);
+			PrintWriter pw = new PrintWriter(os);
+
+			//Nhan yeu cau tu Client
+
+			//Kiem tra dieu kien de thoat
+
+			//Xy ly yeu cau
+
+			//Gui ket qua cho Client
+			
+			s.close();
+		}
+		catch(IOException e) {
+			System.out.println("Khong khoi tao duoc Server");
+		}
+
+	}
+
+}
